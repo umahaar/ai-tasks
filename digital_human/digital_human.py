@@ -69,5 +69,5 @@ interface = gr.Interface(
     description="Upload a video, provide text, and optionally upload an audio file. The model will sync the lips to the text and audio."
 )
 
-# For Colab, use share=True to generate a public URL
-interface.launch(share=True)
+if __name__ == "__main__":
+    interface.launch(share=True)  # Share=True generates a public URL in Colab
